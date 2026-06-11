@@ -216,7 +216,6 @@ interface _BackendQuality {
   uniqueness_score:    number | null
   suggested_fixes:     string[]
   analysis_partial:    boolean
-  analysis_error:      string | null
   // image
   class_distribution:  Record<string, number> | null
   num_classes:         number | null
