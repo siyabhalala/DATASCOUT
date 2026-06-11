@@ -11,7 +11,20 @@ STARTUP ORDER:
 SHUTDOWN ORDER (reverse):
   1. Close Elasticsearch connection
   2. Close DB connections
+  
 """
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://datascout-ecru.vercel.app/",  # your deployed frontend
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 from __future__ import annotations
 
