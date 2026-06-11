@@ -1,0 +1,135 @@
+{
+  "run_timestamp": "2026-05-23T04:56:42.850832+00:00",
+  "sections": {
+    "A.huggingface_retrieval": {
+      "image classification": 5,
+      "sentiment analysis": 5,
+      "crop disease detection": 1
+    },
+    "A.openml_retrieval": {
+      "classification": 0,
+      "regression": 0
+    },
+    "A.provider_outage_isolation": "passed",
+    "B.huggingface_schema": [
+      {
+        "id": "1f74cc459f3e",
+        "completeness": 0.49999999999999994,
+        "tasks": [
+          "image_classification",
+          "tabular_classification"
+        ],
+        "modalities": [
+          "multimodal",
+          "image",
+          "text"
+        ]
+      },
+      {
+        "id": "cc367218b03b",
+        "completeness": 0.49999999999999994,
+        "tasks": [
+          "image_classification",
+          "tabular_classification"
+        ],
+        "modalities": [
+          "multimodal",
+          "image",
+          "text",
+          "tabular"
+        ]
+      },
+      {
+        "id": "7539f56ac8f5",
+        "completeness": 0.49999999999999994,
+        "tasks": [
+          "image_classification",
+          "tabular_classification"
+        ],
+        "modalities": [
+          "multimodal",
+          "image",
+          "text",
+          "tabular"
+        ]
+      },
+      {
+        "id": "749e562aeae7",
+        "completeness": 0.9,
+        "tasks": [
+          "image_classification",
+          "tabular_classification"
+        ],
+        "modalities": [
+          "multimodal",
+          "image",
+          "text"
+        ]
+      },
+      {
+        "id": "e78a411ec6ad",
+        "completeness": 0.9,
+        "tasks": [
+          "tabular_classification"
+        ],
+        "modalities": [
+          "image"
+        ]
+      }
+    ],
+    "D.determinism_ranking": "passed",
+    "D.determinism_scores": {
+      "composite": 0.65,
+      "freshness": 0.8352,
+      "popularity": 0.412,
+      "quality": 0.85
+    },
+    "E.large_batch_ms": 0,
+    "F.e2e.image_classification": {
+      "query": "image classification",
+      "total_datasets": 5,
+      "ranked_count": 5,
+      "duplicates_removed": 0,
+      "top_result": {
+        "title": "Autotrain Data Image Classification",
+        "source": "huggingface",
+        "composite": 0.5858,
+        "score_label": "MODERATE"
+      },
+      "providers": [
+        "huggingface"
+      ]
+    },
+    "F.e2e.sentiment_analysis": {
+      "query": "sentiment analysis",
+      "total_datasets": 5,
+      "ranked_count": 5,
+      "duplicates_removed": 0,
+      "top_result": {
+        "title": "Turkish Sentiment Analysis Dataset",
+        "source": "huggingface",
+        "composite": 0.6206,
+        "score_label": "MODERATE"
+      },
+      "providers": [
+        "huggingface"
+      ]
+    },
+    "F.e2e.crop_disease_detection": {
+      "query": "crop disease detection",
+      "total_datasets": 1,
+      "ranked_count": 1,
+      "duplicates_removed": 0,
+      "top_result": {
+        "title": "Xai Cropdiseasedetection",
+        "source": "huggingface",
+        "composite": 0.5361,
+        "score_label": "MODERATE"
+      },
+      "providers": [
+        "huggingface"
+      ]
+    }
+  },
+  "run_end": "2026-05-23T04:57:19.190653+00:00"
+}

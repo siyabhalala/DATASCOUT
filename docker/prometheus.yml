@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# DATASCOUT — Prometheus scrape configuration
+# ─────────────────────────────────────────────────────────────────────────────
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    system: datascout
+
+scrape_configs:
+  - job_name: datascout_api
+    static_configs:
+      - targets:
+          - api:8000
+    metrics_path: /metrics
+    scrape_interval: 15s
+    scrape_timeout: 10s
