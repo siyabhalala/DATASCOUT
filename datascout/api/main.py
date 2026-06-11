@@ -14,12 +14,11 @@ SHUTDOWN ORDER (reverse):
   
 """
 from fastapi.middleware.cors import CORSMiddleware
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://datascout-ecru.vercel.app/",  # your deployed frontend
+        "https://datascout-ecru.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
