@@ -8,11 +8,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python deps first (layer caching)
-COPY requirements.txt .
+COPY datascout/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy source
-COPY . .
+COPY datascout ./datascout
+COPY setup.py .
+COPY pyproject.toml .
 
 # Install as package
 RUN pip install --no-cache-dir -e .
